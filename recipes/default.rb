@@ -18,7 +18,7 @@ else
   loggly_token = node['loggly']['token']['value']
 end
 
-include_recipe "rsyslog::default"
+#include_recipe "rsyslog::default"
 
 include_recipe "loggly-rsyslog::tls" if node['loggly']['tls']['enabled']
 
